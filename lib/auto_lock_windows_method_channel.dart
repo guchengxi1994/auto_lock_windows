@@ -49,4 +49,11 @@ class MethodChannelAutoLockWindows extends AutoLockWindowsPlatform {
         _lib.lookup<ffi.NativeFunction<CFunc>>("sleep_windows").asFunction();
     func();
   }
+
+  @override
+  Future playSound() async {
+    Func func =
+        _lib.lookup<ffi.NativeFunction<CFunc>>("play_sound").asFunction();
+    func();
+  }
 }

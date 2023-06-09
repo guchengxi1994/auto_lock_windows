@@ -32,4 +32,6 @@ abstract class AutoLockWindowsPlatform extends PlatformInterface {
   Future sleepWindows();
 
   Future<int> getLastInputDuration();
+
+  Future playSound();
 }

@@ -27,6 +27,12 @@ class MockAutoLockWindowsPlatform
     // TODO: implement getLastInputDuration
     throw UnimplementedError();
   }
+
+  @override
+  Future playSound() {
+    // TODO: implement playSound
+    throw UnimplementedError();
+  }
 }
 
 void main() {

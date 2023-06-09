@@ -16,4 +16,8 @@ class AutoLockWindows {
   Future<int> getDuration() async {
     return AutoLockWindowsPlatform.instance.getLastInputDuration();
   }
+
+  Future playSound() async {
+    return AutoLockWindowsPlatform.instance.playSound();
+  }
 }
